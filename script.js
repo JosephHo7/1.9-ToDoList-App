@@ -10,10 +10,18 @@ function newItem(){
         li.append(item);
         list.append(li);
       }
+
+
+//cross out an item from the list
+function crossout() {
+    li.addClass('strike');
 }
 
+    li.on('dblclick',crossout);   
 
 
 
 
 
+
+}
