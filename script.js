@@ -19,7 +19,10 @@ function crossout() {
 
     li.on('dblclick',crossout);   
 
-
+//Add the delete button 'x'
+let crossOutButton = $('<crossOutButton></crossOutButton>');
+crossOutButton.append(document.createTextNode('X'));
+li.append(crossOutButton);
 
 
 
