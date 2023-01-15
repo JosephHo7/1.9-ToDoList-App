@@ -1,13 +1,19 @@
-let list = $('#list');
-let li = $('<li></li>');
-let item = $('#input').val();
+// add a new item to list
+function newItem(){
+    let list = $('#list');
+    let li = $('<li></li>');
+    let item = $('#input').val();
+    
+    if (item === '') {
+        alert("You must write something!");
+      } else {
+        li.append(item);
+        list.append(li);
+      }
+}
 
-// li.append(item);
-// list.append(li);
 
-$('#button').on(click, function newItem() {
-    li.append(item);
-    list.append(li);
-})
+
+
 
 
