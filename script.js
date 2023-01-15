@@ -29,5 +29,7 @@ li.on('click', function () {
     li.addClass('delete');
 })
 
+//reorder items
+list.sortable();
 
 }
