@@ -25,7 +25,7 @@ crossOutButton.append(document.createTextNode('X'));
 li.append(crossOutButton);
 
 //click on x to delete item
-li.on('click', function () {
+crossOutButton.on('click', function () {
     li.addClass('delete');
 })
 
